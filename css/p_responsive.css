@@ -1,0 +1,190 @@
+@media only screen and (max-device-width: 600px){
+    .PP_section {
+        padding: 40px 12px;
+        margin-top: 76px;
+        background: #F8F9FA;
+    }
+    .pp_title {
+        color: var(--neutral-800, #3C3C3C);
+        text-align: center;
+        font-family: 'Baskerville';
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.44px;
+        text-transform: capitalize;
+        margin-bottom: 24px;
+    }
+    .pp_main_frame p {
+        color: var(--neutral-800, #3C3C3C);
+        font-family: 'Comfortaa';
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 151.5%; /* 22.725px */
+        letter-spacing: 0.675px;
+        margin-bottom: 24px;
+    }
+    .pp_main_frame p:last-child {
+        margin-bottom: 0px;
+    }
+    .error_section {
+        padding: 0px;
+        margin-top: 77px;
+        background: url(../img/Mobile_error_bg.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .error_title {
+        color: var(--neutral-white, #FFF);
+        font-family: 'Comfortaa';
+        font-size: 96px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 90px; /* 27.083% */
+        text-transform: capitalize;
+        margin-bottom: 24px;
+    } 
+    .error_subtitle {
+        color: var(--neutral-white, #FFF);
+        text-align: center;
+        font-family: 'Comfortaa';
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 151.5%; /* 22.725px */
+        letter-spacing: 0.675px;
+        margin-bottom: 24px;
+    }
+    .btn_error p {
+        color: var(--neutral-800, #3C3C3C);
+        font-family: 'Comfortaa';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px; /* 162.5% */
+        text-transform: capitalize;
+    }
+    .error_pg_frame {
+        max-width: 421px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 136px;
+        padding-bottom: 136px;
+    }
+    .cs_1 {
+        background: url(../img/Mobile_contactbg.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding: 115px 0px;
+    }
+    .cs1_title {
+        color: var(--neutral-white, #FFF);
+        text-align: center;
+        font-family: 'Baskerville';
+        font-size: 32px;
+        margin-bottom: 0px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.44px;
+        text-transform: capitalize;
+    }
+    .cs_2_frame {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        padding: 0px 0px;
+        gap: 32px;
+    }
+    .box {
+        border-radius: 0px;
+        border: 0px solid var(--Outline, #E0E0E0);
+        background: var(--neutral-white, #FFF);
+        padding: 40px 12px 0px;
+    }
+    .contact_section {
+        padding: 0px;
+        margin-top: 77px;
+    }
+    .Map_contact {
+        display: none;
+    }
+    .Map_contact_mobo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn_submit_contact {
+        padding: 16px 32px;
+        color: var(--neutral-white, #FFF);
+        font-family: 'Comfortaa';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px; /* 162.5% */
+        text-transform: capitalize;
+        width: 100%;
+    }
+}
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1348px){
+    .errors{
+        margin-top: 0px;
+    }
+    .Map_contact{
+        width: 512px;
+        height: 744px;
+    }
+    .submit_contact{
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (min-device-width: 1349px) and (max-device-width: 1439px){
+    .errors{
+        margin-top: 10px;
+    }
+    .error_btn{
+        margin-left: 460px;
+    }
+    .Map_contact{
+        max-width: 510px;
+    }
+}
+
+@media only screen and (min-device-width: 1440px) and (max-device-width: 1499px) {
+    .errors{
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-device-width: 1500px) and (max-device-width: 1599px) {
+    .errors{
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-device-width: 1600px) and (max-device-width: 1699px) {
+    .errors{
+        margin-top: 70px;
+    }
+}
+
+@media only screen and (min-device-width: 1700px) and (max-device-width: 1799px) {
+    .errors{
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (min-device-width: 1800px) and (max-device-width: 1919px) {
+    .errors{
+        margin-top: 110px;
+    }
+}
+
+@media only screen and (max-device-width: 1920px) {
+   
+}

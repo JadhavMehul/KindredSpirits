@@ -1,0 +1,116 @@
+
+@media only screen and (max-width: 600px) {
+    .order_section{
+        padding-top: 77px;
+    }
+    .order_container{
+        padding: 0px;
+    }
+    .order_tab{
+        padding: 0px;
+        flex-direction: column;
+    }
+    .order_right{
+        display: none;
+    }
+    .order_left{
+        max-width: 327px;
+        gap: 24px;
+    }
+    .order_welcome{
+        font-size: 32px;
+        letter-spacing: 1.44px;
+    }
+    .form_row{
+        flex-direction: column;
+    }
+    .order_info_section{
+        padding: 0px;
+    }
+    .order_info_container{
+        border: none;
+        background-color: #F8F9FA;
+    }
+    .address_save_button{
+        width: -webkit-fill-available;
+    }
+    .account_tab_nav{
+        display: none;
+    }
+    .mob_tab_dropdown{
+        display: block;
+        background-image: url(../img/mob_tabbg.svg);
+        background-position: right 16px center;
+        background-repeat: no-repeat;
+    }
+    .tab_button_bar{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .order_tab_bar{
+        padding: 24px;
+    }
+    .order_tab_button{
+        padding-bottom: 15px;
+    }
+
+    .order_tab_button.active{
+        padding-bottom: 15px;
+    }
+    .order_mob_tab_button{
+        text-align: start;
+    }
+    .order_info_container{
+        padding: 0px;
+    }
+    .order_row_main{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .order-row.current{
+        background-color: #f4f4f4;
+    }
+    .order_history_title{
+        font-size: 18px;
+    }
+
+
+
+
+    /* order css*/
+    .rder-row-main .current .order-sum-mo {
+        display: block;
+    }
+    .show-img {
+        display: none !important;
+        margin-top: 12px;
+    } 
+}
+
+@media only screen and (min-width: 1200px) and (max-width:1348px) {
+    .order_left{
+        width: 650px;
+    }
+}
+
+@media only screen and (min-width: 1349px) and (max-width:1439px) {
+    .order_left{
+        width: 650px;
+    }
+}
+
+@media only screen and (min-width: 1440px) and (max-width:1499px) {
+}
+
+@media only screen and (min-width: 1500px) and (max-width:1599px) {
+}
+
+@media only screen and (min-width: 1600px) and (max-width:1699px) {
+}
+
+@media only screen and (min-width: 1700px) and (max-width:1799px) {
+}
+
+@media only screen and (min-width: 1800px) and (max-width:1919px) {
+}

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kindrid Spirits</title>
+
+    <!-- Style Sheets -->
+
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/m_styles.css">
+    <link rel="stylesheet" href="./css/m_responsive.css">
+    <link rel="stylesheet" href="./css/dhirajstyle.css">
+    <link rel="stylesheet" href="./css/dhirajresponsive.css">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="fixed-top">
+        <div class="header_top">
+            <div class="container desktop_header">
+                <div class="header_main_container">
+                    <div class="header_left">
+                        <a href="./index.html">
+                            <img src="./img/header_logo.svg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="header_right">
+                        <a href="" class="header_link">Store</a>
+                        <a href="" class="header_link">Our Story</a>
+                        <a href="" class="header_link">Contact us</a>
+                        <a href="" class="header_link">My Account</a>
+                        <button class="btn btn_currency" onclick="currency_drop()">
+                            GBP $
+                            <img src="./img/currency_arrow.svg" alt="" class="img-fluid">
+                        </button>
+                        <div class="currency_drop d-none" id="currency_drop">
+                            <a href="" class="currency_link active">USD $</a>
+                            <a href="" class="currency_link">EUR $</a>
+                            <a href="" class="currency_link">BTC $</a>
+                            <a href="" class="currency_link">RUB $</a>
+                        </div>
+                        <button class="btn btn_cart">
+                            <img src="./img/cart_logo.svg" alt="" class="img-fluid">
+                        </button>
+                        <div class="cart_drop" id="cart_drop" style="display: none;">
+                            <div class="cart_top">
+                                <h4 class="cart_drop_title">Shopping cart</h4>
+                            </div>
+                            <div class="cart_main">
+                                <div class="cart_main_elements">
+                                    <div class="cart_drop_img">
+                                        <img src="./img/cart_drop_img.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="cart_main_info">
+                                        <div class="cart_main_info_top">
+                                            <div class="">
+                                                <p class="cart_info_title">Product name here</p>
+                                                <p class="cart_product_type">Video</p>
+                                            </div>
+                                            <button class="btn btn_cart_item_delete">
+                                                <img src="./img/bin.svg" alt="" class="img-fluid">
+                                            </button>
+                                        </div>
+                                        <div class="cart_main_info_bottom">
+                                            <div class="collector">
+                                                <button class="btn btn_add_sub">
+                                                    <img src="./img/increment.svg" alt="" class="img-fluid">
+                                                </button>
+                                                <input type="text" class="form-control cart_collector">
+                                                <button class="btn btn_add_sub">
+                                                    <img src="./img/decrement.svg" alt="" class="img-fluid">
+                                                </button>
+                                            </div>
+                                            <p class="cart_item_total">$10.99</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mobile_header">
+                <div class="header_mobo_main">
+                    <div class="header_mobo_left">
+                        <div class="hamburger_cart">
+                            <img src="./img/cart_logo.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="header_mobo_center">
+                        <img src="./img/header_mobo.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="header_mobo_right">
+                        <div class="hamburger_menu">
+                            <img src="./img/hamburger_logo.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="hamburger_menu_close" style="display: none;">
+                            <img src="./img/hamburger_close.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_mobo_main_slide" style="display: none;">
+            <div class="header_main_mobo">
+                <a href="" class="header_link">Store</a>
+                <a href="" class="header_link">Our Story</a>
+                <a href="" class="header_link">Contact us</a>
+                <a href="" class="header_link">My Account</a>
+                <button class="btn btn_currency">
+                    GBP $
+                    <img src="./img/currency_arrow.svg" alt="" class="img-fluid">
+                </button>
+            </div>
+        </div>
+    </header>
+    <section class="check_out">
+        <div class="check_out_alert">
+            <div class="container">
+                <div class="content_alert">
+                    <img src="./img/warning.png" alt="" class="warn_ing">
+                    <p class="alert_content">invalid Coupon code provided</p>
+                    <img src="./img/cross.png" alt="" class="close">
+                </div>
+            </div>
+        </div>
+        <div class="container check_container">
+            <div class="check_out_box">
+                <div class="check_title">
+                    <h4 class="titlle">Checkout</h4>
+                </div>
+                <div class="main_frame">
+                    <div class="main_card">
+                        <div class="rect_angle">
+                            <div class="main_circlee active">
+                                <p>1</p>
+                            </div>
+                        </div>
+                        <p class="main_card_text">Billing</p>
+                    </div>
+                    <div class="main_card">
+                        <div class="rect_angle">
+                            <div class="main_circlee ">
+                                <p>2</p>
+                            </div>
+                        </div>
+                        <p class="main_card_text">Payment</p>
+                    </div>
+                    <div class="main_card third_card">
+                        <div class="main_circlee  ">
+                            <p>3</p>
+                        </div>
+                        <p class="main_card_text">Confirmation</p>
+                    </div>
+                </div>
+                <div class="yourcheck_box">
+                    <h1 class="checkyour_title">Billing Address</h1>
+                    <div class="check_cont_box">
+                        <div class="checktext_2">
+                            <input type="text" id="form2Example1" class="text_name" placeholder="First Name">
+                        </div>
+                        <div class="checktext_1">
+                            <input type="text" id="form2Example2" class="text_name" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="check_cont_box">
+                        <div class="checktext_1">
+                            <input type="text" id="form2Example2" class="text_name" placeholder="Phone">
+                        </div>
+                        <div class="checktext_1">
+                            <input type="text" id="form2Example2" class="text_name" placeholder="date of birth">
+                        </div>
+                    </div>
+                    <div class="check_cont_box">
+                        <div class="checktext_2_1">
+                            <input type="text" id="form2Example1" class="text_name" placeholder="Email Address">
+                        </div>
+                    </div>
+                    <div class="check_cont_box">
+                        <div class="checktext_2">
+                            <input type="text" id="form2Example1" class="text_name" placeholder="address line 1">
+                        </div>
+                        <div class="checktext_1">
+                            <input type="text" id="form2Example2" class="text_name" placeholder="Address Line 2">
+                        </div>
+                    </div>
+                    <div class="check_cont_box">
+                        <div class="checktext_2">
+                            <input type="text" id="form2Example1" class="text_name" placeholder="City/Town">
+                        </div>
+                        <select class="form-select drop_ddon" aria-label="Default select example">
+                            <option selected="">United Kingdom</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="check_cont_box">
+                        <div class="checktext_2">
+                            <input type="text" id="form2Example1" class="text_name" placeholder="County/State/Province">
+                        </div>
+                        <div class="checktext_1">
+                            <input type="text" id="form2Example2" class="text_name" placeholder="Zip Code/Postal Code">
+                        </div>
+                    </div>
+                    <div class="check_cont_boxx">
+                        <div class="checkbo_x">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="chec_box_content" for="flexCheckDefault">
+                                I Agree To The
+                                <span class="blu_e"> Terms & Conditions</span> & <span class="blu_e"> Privacy
+                                    Policy</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="captcha_box">
+                        <div class="captcha">
+                            <img src="./img/reCAPTCHA.png" class="captch_img img-fluid ">
+                        </div>
+                        <div class="master_card">
+                            <img src="./img/Mastercard.png" alt="" class="master_ccarde img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order_boxx">
+                <div class="ordr_sum">
+                    <h2 class="summaryy">Order Summary</h2>
+                </div>
+                <div class="cart_main_elements_1">
+                    <div class="cart_drop_img_1">
+                        <img src="./img/cart_drop_img.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="cart_main_info_1">
+                        <div class="cart_main_info_top_1">
+                            <div class="">
+                                <p class="cart_info_title_1">Product name here</p>
+                                <p class="cart_product_type_1">Video</p>
+                            </div>
+                            <button class="btn btn_cart_item_delete_1">
+                                <img src="./img/bin.svg" alt="" class="img-fluid">
+                            </button>
+                        </div>
+                        <div class="cart_main_info_bottom_1">
+                            <div class="collector_1">
+                                <button class="btn btn_add_sub_1">
+                                    <img src="./img/decrement.svg" alt="" class="img-fluid">
+                                </button>
+                                <input type="text" class="form-control cart_collector_1" min="1" max="10" value="2">
+                                <button class="btn btn_add_sub">
+                                    <img src="./img/increment.svg" alt="" class="img-fluid">
+                                </button>
+                            </div>
+                            <p class="cart_item_total_1">$10.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart_main_elements_1">
+                    <div class="cart_drop_img_1">
+                        <img src="./img/cart_drop_img.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="cart_main_info_1">
+                        <div class="cart_main_info_top_1">
+                            <div class="">
+                                <p class="cart_info_title_1">Product name here</p>
+                                <p class="cart_product_type_1">Video</p>
+                            </div>
+                            <button class="btn btn_cart_item_delete_1">
+                                <img src="./img/bin.svg" alt="" class="img-fluid">
+                            </button>
+                        </div>
+                        <div class="cart_main_info_bottom_1">
+                            <div class="collector_1">
+                                <button class="btn btn_add_sub_1">
+                                    <img src="./img/decrement.svg" alt="" class="img-fluid">
+                                </button>
+                                <input type="text" class="form-control cart_collector_1" min="1" max="10" value="2">
+                                <button class="btn btn_add_sub">
+                                    <img src="./img/increment.svg" alt="" class="img-fluid">
+                                </button>
+                            </div>
+                            <p class="cart_item_total_1">$10.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart_main_elements_1">
+                    <div class="cart_drop_img_1">
+                        <img src="./img/cart_drop_img.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="cart_main_info_1">
+                        <div class="cart_main_info_top_1">
+                            <div class="">
+                                <p class="cart_info_title_1">Product name here</p>
+                                <p class="cart_product_type_1">Video</p>
+                            </div>
+                            <button class="btn btn_cart_item_delete_1">
+                                <img src="./img/bin.svg" alt="" class="img-fluid">
+                            </button>
+                        </div>
+                        <div class="cart_main_info_bottom_1">
+                            <div class="collector_1">
+                                <button class="btn btn_add_sub_1">
+                                    <img src="./img/decrement.svg" alt="" class="img-fluid">
+                                </button>
+                                <input type="text" class="form-control cart_collector_1" min="1" max="10" value="2">
+                                <button class="btn btn_add_sub">
+                                    <img src="./img/increment.svg" alt="" class="img-fluid">
+                                </button>
+                            </div>
+                            <p class="cart_item_total_1">$10.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cupon_box">
+                    <p class="have_cupon">Have a coupon?</p>
+                    <div class="checktext_2">
+                        <input type="text" id="form2Example1" class="text_name" placeholder="Coupon Code">
+                    </div>
+                    <button type="button" class="btn btn_aaply">Apply</button>
+                </div>
+                <div class="sub_total_box">
+                    <div class="sub_total_content">
+                        <p class="name_sub">Subtotal</p>
+                        <p class="name_sub">$220.00</p>
+                    </div>
+                    <div class="sub_total_content">
+                        <p class="name_sub">Discount</p>
+                        <p class="name_sub">$220.00</p>
+                    </div>
+                    <hr class="linnne">
+                    <div class="sub_total_content">
+                        <p class="name_tot">Total:</p>
+                        <p class="name_tot">$220.00</p>
+                    </div>
+                    <button type="button" class="btn btn_secure">Secure checkout</button>
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_main">
+                <div class="footer_left">
+                    <img src="./img/footer_logo.svg" alt="" class="img-flud">
+                </div>
+                <div class="footer_right">
+                    <div class="footer_elements">
+                        <h4 class="footer_title">Quick links</h4>
+                        <a href="" class="footer_links">Store</a>
+                        <a href="" class="footer_links">Our Story</a>
+                        <a href="" class="footer_links">Contact Us</a>
+                        <a href="" class="footer_links">Terms & Conditions</a>
+                        <a href="" class="footer_links">Privacy Policy</a>
+                    </div>
+                    <div class="footer_elements">
+                        <h4 class="footer_title">Contact</h4>
+                        <p class="footer_info">
+                            Lorem Ipsum dolor
+                            100 Edenbridge Road,
+                            Birmingham,
+                            United Kingdom,
+                            B28 8PR
+                        </p>
+                    </div>
+                    <div class="footer_elements">
+                        <h4 class="footer_title">Support</h4>
+                        <p class="footer_info">Support@kindredspirits.co</p>
+                        <p class="footer_info">+44 (0) 20 123 4567</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_divider"></div>
+            <div class="footer_bottom">
+                <img src="./img/Mastercard.png" alt="" class="img-fluid">
+                <p class="footer_copyrights">
+                    ©2023 <span>Kindred Spirits</span> All rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./dist/js/jquery.min.js"></script>
+    <script src="./dist/js/owl.carousel.js"></script>
+    <!-- <script src="./dist/js/bootstrap.min.js"></script>
+    <script src="./dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".hamburger_menu").click(function () {
+                $(".header_mobo_main_slide").fadeIn("slow");
+                $(".hamburger_menu").fadeOut("slow");
+                $(".hamburger_menu_close").fadeIn("slow");
+            });
+            $(".hamburger_menu_close").click(function () {
+                $(".header_mobo_main_slide").fadeOut("slow");
+                $(".hamburger_menu").fadeIn("slow");
+                $(".hamburger_menu_close").fadeOut("slow");
+            });
+        });
+
+        function currency_drop() {
+            var a = document.getElementById('currency_drop');
+            if (a.classList.contains('d-none')) {
+                a.classList.remove('d-none');
+            } else {
+                a.classList.add('d-none')
+            }
+        }
+    </script>
+
+</body>
+
+</html>

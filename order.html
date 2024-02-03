@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kindrid Spirits</title>
+
+    <!-- Style Sheets -->
+
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/m_styles.css">
+    <link rel="stylesheet" href="./css/m_responsive.css">
+    <link rel="stylesheet" href="./css/rahul_style.css">
+    <link rel="stylesheet" href="./css/rahul_responsive.css">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="fixed-top">
+        <div class="header_top">
+            <div class="container desktop_header">
+                <div class="header_main_container">
+                    <div class="header_left">
+                        <a href="./index.html">
+                            <img src="./img/header_logo.svg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="header_right">
+                        <a href="" class="header_link">Store</a>
+                        <a href="" class="header_link">Our Story</a>
+                        <a href="" class="header_link">Contact us</a>
+                        <a href="" class="header_link">My Account</a>
+                        <button class="btn btn_currency" onclick="currency_drop()">
+                            GBP $
+                            <img src="./img/currency_arrow.svg" alt="" class="img-fluid">
+                        </button>
+                        <div class="currency_drop d-none" id="currency_drop">
+                            <a href="" class="currency_link active">USD $</a>
+                            <a href="" class="currency_link">EUR $</a>
+                            <a href="" class="currency_link">BTC $</a>
+                            <a href="" class="currency_link">RUB $</a>
+                        </div>
+                        <button class="btn btn_cart">
+                            <img src="./img/cart_logo.svg" alt="" class="img-fluid">
+                        </button>
+                        <div class="cart_drop" id="cart_drop" style="display: none;">
+                            <div class="cart_top">
+                                <h4 class="cart_drop_title">Shopping cart</h4>
+                            </div>
+                            <div class="cart_main">
+                                <div class="cart_main_elements">
+                                    <div class="cart_drop_img">
+                                        <img src="./img/cart_drop_img.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="cart_main_info">
+                                        <div class="cart_main_info_top">
+                                            <div class="">
+                                                <p class="cart_info_title">Product name here</p>
+                                                <p class="cart_product_type">Video</p>
+                                            </div>
+                                            <button class="btn btn_cart_item_delete">
+                                                <img src="./img/bin.svg" alt="" class="img-fluid">
+                                            </button>
+                                        </div>
+                                        <div class="cart_main_info_bottom">
+                                            <div class="collector">
+                                                <button class="btn btn_add_sub">
+                                                    <img src="./img/increment.svg" alt="" class="img-fluid">
+                                                </button>
+                                                <input type="text" class="form-control cart_collector">
+                                                <button class="btn btn_add_sub">
+                                                    <img src="./img/decrement.svg" alt="" class="img-fluid">
+                                                </button>
+                                            </div>
+                                            <p class="cart_item_total">$10.99</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mobile_header">
+                <div class="header_mobo_main">
+                    <div class="header_mobo_left">
+                        <div class="hamburger_cart">
+                            <img src="./img/cart_logo.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="header_mobo_center">
+                        <img src="./img/header_mobo.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="header_mobo_right">
+                        <div class="hamburger_menu">
+                            <img src="./img/hamburger_logo.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="hamburger_menu_close" style="display: none;">
+                            <img src="./img/hamburger_close.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_mobo_main_slide" style="display: none;">
+            <div class="header_main_mobo">
+                <a href="" class="header_link">Store</a>
+                <a href="" class="header_link">Our Story</a>
+                <a href="" class="header_link">Contact us</a>
+                <a href="" class="header_link">My Account</a>
+                <button class="btn btn_currency">
+                    GBP $
+                    <img src="./img/currency_arrow.svg" alt="" class="img-fluid">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="order_section">
+        <div class="container order_container">
+            <div class="order_tab_bar">
+                <div class="order_title_bar">
+                    <img src="./img/girlfriend.svg">
+                    <h2 class="order_welcome">Welcome back john smith</h2>
+                </div>
+                <nav class="account_tab_nav">
+                    <div class="nav nav-tabs tab_button_bar" id="nav-tab" role="tablist">
+                        <button class="tab order_tab_button active" id="nav-account-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-account" type="button" role="tab" aria-controls="nav-account"
+                            aria-selected="true"><img src="./img/account icon.svg">Account Details</button>
+                        <button class="tab order_tab_button" id="nav-address-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-address" type="button" role="tab" aria-controls="nav-address"
+                            aria-selected="false"><img src="./img/address icon.svg">Address Details</button>
+                        <button class="tab order_tab_button" id="nav-order-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-order" type="button" role="tab" aria-controls="nav-order"
+                            aria-selected="false"><img src="./img/order icon.svg">Order History</button>
+                        <button class="btn order_tab_button" id="" type="button"><img
+                                src="./img/logout icon.svg">Logout</button>
+                    </div>
+                </nav>
+                <div class="dropdown mob_tab_dropdown w-100">
+                    <button class="btn  w-100 order_mob_tab_button" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        United Kingdom
+                    </button>
+                    <div class="dropdown-menu w-100">
+                        <div class="nav nav-tabs tab_button_bar" id="nav-tab" role="tablist">
+                            <button class="tab order_tab_button active" id="nav-account-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-account" type="button" role="tab" aria-controls="nav-account"
+                                aria-selected="true"><img src="./img/account icon.svg">Account Details</button>
+                            <button class="tab order_tab_button" id="nav-address-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-address" type="button" role="tab" aria-controls="nav-address"
+                                aria-selected="false"><img src="./img/address icon.svg">Address Details</button>
+                            <button class="tab order_tab_button" id="nav-order-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-order" type="button" role="tab" aria-controls="nav-order"
+                                aria-selected="false"><img src="./img/order icon.svg">Order History</button>
+                            <button class="btn order_tab_button" id="" type="button"><img
+                                    src="./img/logout icon.svg">Logout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="order_info_section">
+        <div class="container order_info_container">
+            <div class="tab-content" id="nav-tabContent">
+
+                <!-- Account Tab Start -->
+                <div class="tab-pane fade active account_tab show" id="nav-account" role="tabpanel"
+                    aria-labelledby="nav-account-tab">
+                    <h3 class="account_title">Account details</h3>
+                    <form class="account_form">
+                        <div class="form-group form_row">
+                            <div class="first_last w-100">
+                                <label class="first_label" for="name">First Name</label>
+                                <input type="text" class="form-control form_textbox" id="firstname" placeholder="John">
+                            </div>
+                            <div class="first_last w-100">
+                                <label for="name">Last Name</label>
+                                <input type="text" class="form-control form_textbox" id="lastname" placeholder="Smith">
+                            </div>
+                        </div>
+                        <div class="form-group form_row">
+                            <div class="first_last w-100">
+                                <label class="first_label" for="name">Date of Birth</label>
+                                <input type="" class="form-control form_textbox" id="date" placeholder="01/01/2023">
+                            </div>
+                            <div class="first_last w-100">
+                                <label for="name">Phone Number</label>
+                                <input type="number" class="form-control form_textbox" id="phone"
+                                    placeholder="+44 123 456 78">
+                            </div>
+                        </div>
+                        <div class="form-group form_row">
+                            <div class="first_last w-100">
+                                <label class="first_label" for="name">Email Address</label>
+                                <input type="email" class="form-control form_textbox" id="email"
+                                    placeholder="johnsmith@gmail.com">
+                            </div>
+                        </div>
+                        <div class="form-group form_row">
+                            <div class="first_last w-100">
+                                <label class="first_label" for="name">New Password</label>
+                                <input type="password" class="form-control form_textbox" id="newpassword"
+                                    placeholder="Enter Password">
+                            </div>
+                            <div class="first_last w-100">
+                                <label for="name">Confirm New Password</label>
+                                <input type="password" class="form-control form_textbox" id="confirmpassword"
+                                    placeholder="Enter Password">
+                            </div>
+                        </div>
+                    </form>
+                    <button type="submit" class="btn btn-primary account_save_button w-100">Save Changes</button>
+                </div>
+
+                <!-- Address Tab Start -->
+                <div class="tab-pane fade account_tab" id="nav-address" role="tabpanel"
+                    aria-labelledby="nav-address-tab">
+                    <h3 class="account_title">Address Details</h3>
+                    <form class="account_form">
+                        <div class="form-group form_row">
+                            <div class="first_last w-100">
+                                <label class="first_label" for="name">Address Line 1</label>
+                                <input type="text" class="form-control form_textbox" id="firstname" placeholder="Apt1">
+                            </div>
+                            <div class="first_last w-100">
+                                <label for="name">Address Line 2</label>
+                                <input type="name" class="form-control form_textbox" id="lastname"
+                                    placeholder="123 Street">
+                            </div>
+                        </div>
+                        <div class="form-group form_row">
+                            <div class="first_last w-100">
+                                <label class="first_label" for="name">City/Town</label>
+                                <input type="" class="form-control form_textbox" id="date" placeholder="London">
+                            </div>
+                            <div class="first_last w-100">
+                                <label for="name">Country</label>
+                                <div class="dropdown">
+                                    <button class="btn country_dropdown w-100" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        United Kingdom
+                                    </button>
+                                    <ul class="dropdown-menu w-100">
+                                        <li><a class="dropdown-item" href="#">India</a></li>
+                                        <li><a class="dropdown-item" href="#">America</a></li>
+                                        <li><a class="dropdown-item" href="#">Japan</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form_row">
+                            <div class="first_last w-100">
+                                <label class="first_label" for="name">County/State/Province</label>
+                                <input type="password" class="form-control form_textbox" id="newpassword"
+                                    placeholder="Kent">
+                            </div>
+                            <div class="first_last w-100">
+                                <label for="name">Zip Code/Postal Code</label>
+                                <input type="password" class="form-control form_textbox" id="confirmpassword"
+                                    placeholder="123 ABC">
+                            </div>
+                        </div>
+                    </form>
+                    <button type="submit" class="btn btn-primary address_save_button">Save Changes</button>
+                </div>
+
+                <!-- Order Tab Start -->
+                <div class="tab-pane fade order_tab_main" id="nav-order" role="tabpanel" aria-labelledby="nav-order-tab">
+                    <div class="order_tab">
+                        <div class="order_left">
+                            <h3 class="order_history_title">Order History</h3>
+                            <div class="rder-row-main order_row_main w-100">
+                                <div class="order-row">
+                                    <!--current-->
+                                    <div class="d-flex justify-content-between pad-mo">
+                                        <p class="order_date">Order No :&nbsp;&nbsp;<a class="order_number"
+                                                href="#">#1234</a></p>
+                                        <p class="order_date">01/01/23</p>
+                                    </div>
+                                    <h6 class="order_qty">QTY: 3</h6>
+
+                                    <div class="show-img">
+                                        <div class="show-img-box">
+                                            <img src="./img/product_sm.png" alt="" class="img-fluid"
+                                                style="width: 50px;">
+                                            <img src="./img/product_sm.png" alt="" class="img-fluid"
+                                                style="width: 50px;">
+                                            <img src="./img/product_sm.png" alt="" class="img-fluid"
+                                                style="width: 50px;">
+                                        </div>
+                                    </div>
+                                    <div class="order-sum-mo">
+                                        <div class="order_summary_info w-100">
+                                            <img class="product_summary_image" src="./img/product_summary_image.png">
+                                            <div class="summary_info w-100">
+                                                <h3 class="product_name">Product Name Here</h3>
+                                                <p class="product_type">Video</p>
+                                                <div class="sub_amount">
+                                                    <p class="summary_qty">QTY: 1</p>
+                                                    <p class="summary_price">$10.99</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order_summary_info w-100">
+                                            <img class="product_summary_image" src="./img/product_summary_image.png">
+                                            <div class="summary_info w-100">
+                                                <h3 class="product_name">Product Name Here</h3>
+                                                <p class="product_type">Video</p>
+                                                <div class="sub_amount">
+                                                    <p class="summary_qty">QTY: 1</p>
+                                                    <p class="summary_price">$10.99</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order_summary_info w-100">
+                                            <img class="product_summary_image" src="./img/product_summary_image.png">
+                                            <div class="summary_info w-100">
+                                                <h3 class="product_name">Product Name Here</h3>
+                                                <p class="product_type">Video</p>
+                                                <div class="sub_amount">
+                                                    <p class="summary_qty">QTY: 1</p>
+                                                    <p class="summary_price">$10.99</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="summary_total_bar w-100">
+                                            <div class="sub_amount">
+                                                <h3 class="subtotal_text">Subtotal</h3>
+                                                <h3 class="subtotal_amount">$220.00</h3>
+                                            </div>
+                                            <div class="sub_amount">
+                                                <h3 class="subtotal_text">Discount</h3>
+                                                <h3 class="subtotal_amount">$220.00</h3>
+                                            </div>
+                                            <div class="sub_amount total_price">
+                                                <h3 class="total_text">Total</h3>
+                                                <h3 class="total_amount">$220.00</h3>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="order-row ">
+                                    <!--current-->
+                                    <div class="d-flex justify-content-between pad-mo">
+                                        <p class="order_date">Order No :&nbsp;&nbsp;<a class="order_number"
+                                                href="#">#1234</a></p>
+                                        <p class="order_date">01/01/23</p>
+                                    </div>
+                                    <h6 class="order_qty">QTY: 3</h6>
+
+                                    <div class="show-img">
+                                        <div class="show-img-box">
+                                            <img src="./img/product_sm.png" alt="" class="img-fluid"
+                                                style="width: 50px;">
+                                            <img src="./img/product_sm.png" alt="" class="img-fluid"
+                                                style="width: 50px;">
+                                            <img src="./img/product_sm.png" alt="" class="img-fluid"
+                                                style="width: 50px;">
+                                        </div>
+                                    </div>
+                                    <div class="order-sum-mo">
+                                        <div class="order_summary_info w-100">
+                                            <img class="product_summary_image" src="./img/product_summary_image.png">
+                                            <div class="summary_info w-100">
+                                                <h3 class="product_name">Product Name Here</h3>
+                                                <p class="product_type">Video</p>
+                                                <div class="sub_amount">
+                                                    <p class="summary_qty">QTY: 1</p>
+                                                    <p class="summary_price">$10.99</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order_summary_info w-100">
+                                            <img class="product_summary_image" src="./img/product_summary_image.png">
+                                            <div class="summary_info w-100">
+                                                <h3 class="product_name">Product Name Here</h3>
+                                                <p class="product_type">Video</p>
+                                                <div class="sub_amount">
+                                                    <p class="summary_qty">QTY: 1</p>
+                                                    <p class="summary_price">$10.99</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order_summary_info w-100">
+                                            <img class="product_summary_image" src="./img/product_summary_image.png">
+                                            <div class="summary_info w-100">
+                                                <h3 class="product_name">Product Name Here</h3>
+                                                <p class="product_type">Video</p>
+                                                <div class="sub_amount">
+                                                    <p class="summary_qty">QTY: 1</p>
+                                                    <p class="summary_price">$10.99</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="summary_total_bar w-100">
+                                            <div class="sub_amount">
+                                                <h3 class="subtotal_text">Subtotal</h3>
+                                                <h3 class="subtotal_amount">$220.00</h3>
+                                            </div>
+                                            <div class="sub_amount">
+                                                <h3 class="subtotal_text">Discount</h3>
+                                                <h3 class="subtotal_amount">$220.00</h3>
+                                            </div>
+                                            <div class="sub_amount total_price">
+                                                <h3 class="total_text">Total</h3>
+                                                <h3 class="total_amount">$220.00</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="order-row ">
+                                    <!--current-->
+                                    <div class="d-flex justify-content-between pad-mo">
+                                        <p class="order_date">Order No :&nbsp;&nbsp;<a class="order_number"
+                                                href="#">#1234</a></p>
+                                        <p class="order_date">01/01/23</p>
+                                    </div>
+                                    <h6 class="order_qty">QTY: 3</h6>
+
+                                    <div class="show-img">
+                                        <div class="show-img-box">
+                                            <img src="./img/product_sm.png" alt="" class="img-fluid"
+                                                style="width: 50px;">
+                                            <img src="./img/product_sm.png" alt="" class="img-fluid"
+                                                style="width: 50px;">
+                                            <img src="./img/product_sm.png" alt="" class="img-fluid"
+                                                style="width: 50px;">
+                                        </div>
+                                    </div>
+                                    <div class="order-sum-mo">
+                                        <div class="order_summary_info w-100">
+                                            <img class="product_summary_image" src="./img/product_summary_image.png">
+                                            <div class="summary_info w-100">
+                                                <h3 class="product_name">Product Name Here</h3>
+                                                <p class="product_type">Video</p>
+                                                <div class="sub_amount">
+                                                    <p class="summary_qty">QTY: 1</p>
+                                                    <p class="summary_price">$10.99</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order_summary_info w-100">
+                                            <img class="product_summary_image" src="./img/product_summary_image.png">
+                                            <div class="summary_info w-100">
+                                                <h3 class="product_name">Product Name Here</h3>
+                                                <p class="product_type">Video</p>
+                                                <div class="sub_amount">
+                                                    <p class="summary_qty">QTY: 1</p>
+                                                    <p class="summary_price">$10.99</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order_summary_info w-100">
+                                            <img class="product_summary_image" src="./img/product_summary_image.png">
+                                            <div class="summary_info w-100">
+                                                <h3 class="product_name">Product Name Here</h3>
+                                                <p class="product_type">Video</p>
+                                                <div class="sub_amount">
+                                                    <p class="summary_qty">QTY: 1</p>
+                                                    <p class="summary_price">$10.99</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="summary_total_bar w-100">
+                                            <div class="sub_amount">
+                                                <h3 class="subtotal_text">Subtotal</h3>
+                                                <h3 class="subtotal_amount">$220.00</h3>
+                                            </div>
+                                            <div class="sub_amount">
+                                                <h3 class="subtotal_text">Discount</h3>
+                                                <h3 class="subtotal_amount">$220.00</h3>
+                                            </div>
+                                            <div class="sub_amount total_price">
+                                                <h3 class="total_text">Total</h3>
+                                                <h3 class="total_amount">$220.00</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="order-row ">
+                                    <!--current-->
+                                    <div class="d-flex justify-content-between pad-mo">
+                                        <p class="order_date">Order No :&nbsp;&nbsp;<a class="order_number"
+                                                href="#">#1234</a></p>
+                                        <p class="order_date">01/01/23</p>
+                                    </div>
+                                    <h6 class="order_qty">QTY: 3</h6>
+
+                                    <div class="show-img">
+                                        <div class="show-img-box">
+                                            <img src="./img/product_sm.png" alt="" class="img-fluid"
+                                                style="width: 50px;">
+                                            <img src="./img/product_sm.png" alt="" class="img-fluid"
+                                                style="width: 50px;">
+                                            <img src="./img/product_sm.png" alt="" class="img-fluid"
+                                                style="width: 50px;">
+                                        </div>
+                                    </div>
+                                    <div class="order-sum-mo">
+                                        <div class="order_summary_info w-100">
+                                            <img class="product_summary_image" src="./img/product_summary_image.png">
+                                            <div class="summary_info w-100">
+                                                <h3 class="product_name">Product Name Here</h3>
+                                                <p class="product_type">Video</p>
+                                                <div class="sub_amount">
+                                                    <p class="summary_qty">QTY: 1</p>
+                                                    <p class="summary_price">$10.99</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order_summary_info w-100">
+                                            <img class="product_summary_image" src="./img/product_summary_image.png">
+                                            <div class="summary_info w-100">
+                                                <h3 class="product_name">Product Name Here</h3>
+                                                <p class="product_type">Video</p>
+                                                <div class="sub_amount">
+                                                    <p class="summary_qty">QTY: 1</p>
+                                                    <p class="summary_price">$10.99</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order_summary_info w-100">
+                                            <img class="product_summary_image" src="./img/product_summary_image.png">
+                                            <div class="summary_info w-100">
+                                                <h3 class="product_name">Product Name Here</h3>
+                                                <p class="product_type">Video</p>
+                                                <div class="sub_amount">
+                                                    <p class="summary_qty">QTY: 1</p>
+                                                    <p class="summary_price">$10.99</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="summary_total_bar w-100">
+                                            <div class="sub_amount">
+                                                <h3 class="subtotal_text">Subtotal</h3>
+                                                <h3 class="subtotal_amount">$220.00</h3>
+                                            </div>
+                                            <div class="sub_amount">
+                                                <h3 class="subtotal_text">Discount</h3>
+                                                <h3 class="subtotal_amount">$220.00</h3>
+                                            </div>
+                                            <div class="sub_amount total_price">
+                                                <h3 class="total_text">Total</h3>
+                                                <h3 class="total_amount">$220.00</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <button type="submit" class="btn btn-primary see_more_button">See More</button>
+                        </div>
+                        <div class="order_right">
+                            <div class="order_summary_title_bar w-100">
+                                <h4 class="order_summary_title">Order Summary</h4>
+                            </div>
+                            <div class="order_summary_info w-100">
+                                <img class="product_summary_image" src="./img/product_summary_image.png">
+                                <div class="summary_info w-100">
+                                    <h3 class="product_name">Product Name Here</h3>
+                                    <p class="product_type">Video</p>
+                                    <div class="sub_amount">
+                                        <p class="summary_qty">QTY: 1</p>
+                                        <p class="summary_price">$10.99</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order_summary_info w-100">
+                                <img class="product_summary_image" src="./img/product_summary_image.png">
+                                <div class="summary_info w-100">
+                                    <h3 class="product_name">Product Name Here</h3>
+                                    <p class="product_type">Video</p>
+                                    <div class="sub_amount">
+                                        <p class="summary_qty">QTY: 1</p>
+                                        <p class="summary_price">$10.99</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order_summary_info w-100">
+                                <img class="product_summary_image" src="./img/product_summary_image.png">
+                                <div class="summary_info w-100">
+                                    <h3 class="product_name">Product Name Here</h3>
+                                    <p class="product_type">Video</p>
+                                    <div class="sub_amount">
+                                        <p class="summary_qty">QTY: 1</p>
+                                        <p class="summary_price">$10.99</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="summary_total_bar w-100">
+                                <div class="sub_amount">
+                                    <h3 class="subtotal_text">Subtotal</h3>
+                                    <h3 class="subtotal_amount">$220.00</h3>
+                                </div>
+                                <div class="sub_amount">
+                                    <h3 class="subtotal_text">Discount</h3>
+                                    <h3 class="subtotal_amount">$220.00</h3>
+                                </div>
+                                <div class="sub_amount total_price">
+                                    <h3 class="total_text">Total</h3>
+                                    <h3 class="total_amount">$220.00</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_main">
+                <div class="footer_left">
+                    <img src="./img/footer_logo.svg" alt="" class="img-flud">
+                </div>
+                <div class="footer_right">
+                    <div class="footer_elements">
+                        <h4 class="footer_title">Quick links</h4>
+                        <a href="" class="footer_links">Store</a>
+                        <a href="" class="footer_links">Our Story</a>
+                        <a href="" class="footer_links">Contact Us</a>
+                        <a href="" class="footer_links">Terms & Conditions</a>
+                        <a href="" class="footer_links">Privacy Policy</a>
+                    </div>
+                    <div class="footer_elements">
+                        <h4 class="footer_title">Contact</h4>
+                        <p class="footer_info">
+                            Lorem Ipsum dolor
+                            100 Edenbridge Road,
+                            Birmingham,
+                            United Kingdom,
+                            B28 8PR
+                        </p>
+                    </div>
+                    <div class="footer_elements">
+                        <h4 class="footer_title">Support</h4>
+                        <p class="footer_info">Support@kindredspirits.co</p>
+                        <p class="footer_info">+44 (0) 20 123 4567</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_divider"></div>
+            <div class="footer_bottom">
+                <img src="./img/Mastercard.png" alt="" class="img-fluid">
+                <p class="footer_copyrights">
+                    ©2023 <span>Kindred Spirits</span> All rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./dist/js/jquery.min.js"></script>
+    <script src="./dist/js/owl.carousel.js"></script>
+    <!-- <script src="./dist/js/bootstrap.min.js"></script>
+    <script src="./dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".hamburger_menu").click(function () {
+                $(".header_mobo_main_slide").fadeIn("slow");
+                $(".hamburger_menu").fadeOut("slow");
+                $(".hamburger_menu_close").fadeIn("slow");
+            });
+            $(".hamburger_menu_close").click(function () {
+                $(".header_mobo_main_slide").fadeOut("slow");
+                $(".hamburger_menu").fadeIn("slow");
+                $(".hamburger_menu_close").fadeOut("slow");
+            });
+        });
+
+        function currency_drop() {
+            var a = document.getElementById('currency_drop');
+            if (a.classList.contains('d-none')) {
+                a.classList.remove('d-none');
+            } else {
+                a.classList.add('d-none')
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.order-row').click(function () {
+                var tab_id = $(this).attr('data-tab');
+                $('.order-row').removeClass('current');
+                $('.tab-contents').removeClass('current');
+                $(this).addClass('current');
+                $("#" + tab_id).addClass('current');
+            })
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kindrid Spirits</title>
+
+    <!-- Style Sheets -->
+
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/m_styles.css">
+    <link rel="stylesheet" href="./css/m_responsive.css">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="fixed-top">
+        <div class="header_top">
+            <div class="container desktop_header">
+                <div class="header_main_container">
+                    <div class="header_left">
+                        <a href="./index.html">
+                            <img src="./img/header_logo.svg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="header_right">
+                        <a href="" class="header_link">Store</a>
+                        <a href="" class="header_link">Our Story</a>
+                        <a href="" class="header_link">Contact us</a>
+                        <a href="" class="header_link">My Account</a>
+                        <button class="btn btn_currency" onclick="currency_drop()">
+                            GBP $
+                            <img src="./img/currency_arrow.svg" alt="" class="img-fluid">
+                        </button>
+                        <div class="currency_drop d-none" id="currency_drop">
+                            <a href="" class="currency_link active">USD $</a>
+                            <a href="" class="currency_link">EUR $</a>
+                            <a href="" class="currency_link">BTC $</a>
+                            <a href="" class="currency_link">RUB $</a>
+                        </div>
+                        <button class="btn btn_cart" onclick="showCart()">
+                            <img src="./img/cart_logo.svg" alt="" class="img-fluid">
+                        </button>
+                        <div class="cart_drop d-none" id="cart_drop">
+                            <div class="cart_top">
+                                <h4 class="cart_drop_title">Shopping cart</h4>
+                            </div>
+                            <div class="cart_main">
+                                <div class="cart_main_elements">
+                                    <div class="cart_drop_img">
+                                        <img src="./img/cart_drop_img.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="cart_main_info">
+                                        <div class="cart_main_info_top">
+                                            <div class="">
+                                                <p class="cart_info_title">Product name here</p>
+                                                <p class="cart_product_type">Video</p>
+                                            </div>
+                                            <button class="btn btn_cart_item_delete">
+                                                <img src="./img/bin.svg" alt="" class="img-fluid">
+                                            </button>
+                                        </div>
+                                        <div class="cart_main_info_bottom">
+                                            <div class="collector">
+                                                <button class="btn btn_add_sub">
+                                                    <img src="./img/decrement.svg" alt="" class="img-fluid">
+                                                </button>
+                                                <input type="text" class="form-control cart_collector" min="1" max="10"
+                                                    value="2">
+                                                <button class="btn btn_add_sub">
+                                                    <img src="./img/increment.svg" alt="" class="img-fluid">
+                                                </button>
+                                            </div>
+                                            <p class="cart_item_total">$10.99</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart_main_elements">
+                                    <div class="cart_drop_img">
+                                        <img src="./img/cart_drop_img.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="cart_main_info">
+                                        <div class="cart_main_info_top">
+                                            <div class="">
+                                                <p class="cart_info_title">Product name here</p>
+                                                <p class="cart_product_type">Video</p>
+                                            </div>
+                                            <button class="btn btn_cart_item_delete">
+                                                <img src="./img/bin.svg" alt="" class="img-fluid">
+                                            </button>
+                                        </div>
+                                        <div class="cart_main_info_bottom">
+                                            <div class="collector">
+                                                <button class="btn btn_add_sub">
+                                                    <img src="./img/decrement.svg" alt="" class="img-fluid">
+                                                </button>
+                                                <input type="text" class="form-control cart_collector" min="1" max="10"
+                                                    value="2">
+                                                <button class="btn btn_add_sub">
+                                                    <img src="./img/increment.svg" alt="" class="img-fluid">
+                                                </button>
+                                            </div>
+                                            <p class="cart_item_total">$10.99</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart_main_elements">
+                                    <div class="cart_drop_img">
+                                        <img src="./img/cart_drop_img.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="cart_main_info">
+                                        <div class="cart_main_info_top">
+                                            <div class="">
+                                                <p class="cart_info_title">Product name here</p>
+                                                <p class="cart_product_type">Video</p>
+                                            </div>
+                                            <button class="btn btn_cart_item_delete">
+                                                <img src="./img/bin.svg" alt="" class="img-fluid">
+                                            </button>
+                                        </div>
+                                        <div class="cart_main_info_bottom">
+                                            <div class="collector">
+                                                <button class="btn btn_add_sub">
+                                                    <img src="./img/decrement.svg" alt="" class="img-fluid">
+                                                </button>
+                                                <input type="text" class="form-control cart_collector" min="1" max="10"
+                                                    value="2">
+                                                <button class="btn btn_add_sub">
+                                                    <img src="./img/increment.svg" alt="" class="img-fluid">
+                                                </button>
+                                            </div>
+                                            <p class="cart_item_total">$10.99</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart_drop_footer">
+                                <div class="cart_drop_footer_top">
+                                    <p class="cart_all_info">Total:</p>
+                                    <p class="cart_all_info">$220.00</p>
+                                </div>
+                                <buttoon class="btn btn_cart_che_button">
+                                    Secure Checkout
+                                </buttoon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mobile_header">
+                <div class="header_mobo_main">
+                    <div class="header_mobo_left">
+                        <div class="hamburger_cart">
+                            <img src="./img/cart_logo.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="header_mobo_center">
+                        <img src="./img/header_mobo.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="header_mobo_right">
+                        <div class="hamburger_menu">
+                            <img src="./img/hamburger_logo.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="hamburger_menu_close" style="display: none;">
+                            <img src="./img/hamburger_close.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="cart_menu_close" style="display: none;">
+                            <img src="./img/hamburger_close.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_mobo_main_slide" style="display: none;">
+            <div class="header_main_mobo">
+                <a href="" class="header_link">Store</a>
+                <a href="" class="header_link">Our Story</a>
+                <a href="" class="header_link">Contact us</a>
+                <a href="" class="header_link">My Account</a>
+                <button class="btn btn_currency">
+                    GBP $
+                    <img src="./img/currency_arrow.svg" alt="" class="img-fluid">
+                </button>
+            </div>
+        </div>
+        <div class="header_mobo_cart_slide" style="display: none;">
+            <div class="cart_drop">
+                <div class="cart_top">
+                    <h4 class="cart_drop_title">Shopping cart</h4>
+                </div>
+                <div class="cart_main">
+                    <div class="cart_main_elements">
+                        <div class="cart_drop_img">
+                            <img src="./img/cart_drop_img.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="cart_main_info">
+                            <div class="cart_main_info_top">
+                                <div class="">
+                                    <p class="cart_info_title">Product name here</p>
+                                    <p class="cart_product_type">Video</p>
+                                </div>
+                                <button class="btn btn_cart_item_delete">
+                                    <img src="./img/bin.svg" alt="" class="img-fluid">
+                                </button>
+                            </div>
+                            <div class="cart_main_info_bottom">
+                                <div class="collector">
+                                    <button class="btn btn_add_sub">
+                                        <img src="./img/decrement.svg" alt="" class="img-fluid">
+                                    </button>
+                                    <input type="text" class="form-control cart_collector" min="1" max="10" value="2">
+                                    <button class="btn btn_add_sub">
+                                        <img src="./img/increment.svg" alt="" class="img-fluid">
+                                    </button>
+                                </div>
+                                <p class="cart_item_total">$10.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_main_elements">
+                        <div class="cart_drop_img">
+                            <img src="./img/cart_drop_img.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="cart_main_info">
+                            <div class="cart_main_info_top">
+                                <div class="">
+                                    <p class="cart_info_title">Product name here</p>
+                                    <p class="cart_product_type">Video</p>
+                                </div>
+                                <button class="btn btn_cart_item_delete">
+                                    <img src="./img/bin.svg" alt="" class="img-fluid">
+                                </button>
+                            </div>
+                            <div class="cart_main_info_bottom">
+                                <div class="collector">
+                                    <button class="btn btn_add_sub">
+                                        <img src="./img/decrement.svg" alt="" class="img-fluid">
+                                    </button>
+                                    <input type="text" class="form-control cart_collector" min="1" max="10" value="2">
+                                    <button class="btn btn_add_sub">
+                                        <img src="./img/increment.svg" alt="" class="img-fluid">
+                                    </button>
+                                </div>
+                                <p class="cart_item_total">$10.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_main_elements">
+                        <div class="cart_drop_img">
+                            <img src="./img/cart_drop_img.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="cart_main_info">
+                            <div class="cart_main_info_top">
+                                <div class="">
+                                    <p class="cart_info_title">Product name here</p>
+                                    <p class="cart_product_type">Video</p>
+                                </div>
+                                <button class="btn btn_cart_item_delete">
+                                    <img src="./img/bin.svg" alt="" class="img-fluid">
+                                </button>
+                            </div>
+                            <div class="cart_main_info_bottom">
+                                <div class="collector">
+                                    <button class="btn btn_add_sub">
+                                        <img src="./img/decrement.svg" alt="" class="img-fluid">
+                                    </button>
+                                    <input type="text" class="form-control cart_collector" min="1" max="10" value="2">
+                                    <button class="btn btn_add_sub">
+                                        <img src="./img/increment.svg" alt="" class="img-fluid">
+                                    </button>
+                                </div>
+                                <p class="cart_item_total">$10.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart_drop_footer">
+                    <div class="cart_drop_footer_top">
+                        <p class="cart_all_info">Total:</p>
+                        <p class="cart_all_info">$220.00</p>
+                    </div>
+                    <buttoon class="btn btn_cart_che_button">
+                        Secure Checkout
+                    </buttoon>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="product_listing">
+        <div class="pl_s1">
+            <h1 class="pl_s1_title">Our Store</h1>
+        </div>
+        <div class="pl_s2">
+            <div class="container">
+                <div class="pls2_top">
+                    <div class="pls2_top_left">
+                        <button class="btn filter_btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                            aria-controls="offcanvasExample">
+                            <img src="./img/filter_icon.png" alt="" class="img-fluid">
+                            Filter
+                        </button>
+                    </div>
+                    <div class="pls2_top_right">
+                        <div class="dropdown">
+                            <button class="btn sort_drop_btn" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sort : Newest
+                                <img src="./img/triangle_down.png" alt="" class="img-fluid">
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <div class="view_changer_div">
+                            <button class="btn btn_view_changer active" id="grid_btn" onclick="grid_btn()">
+                                <img src="./img/grid_view.png" alt="" class="img-fluid">
+                            </button>
+                            <button class="btn btn_view_changer" id="list_btn" onclick="list_btn()">
+                                <img src="./img/list_view.png" alt="" class="img-fluid">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pls2_bottom" id="product_grid_view">
+                    <div class="pl_card">
+                        <div class="pl_card_top">
+                            <img src="./img/pl_card_img.png" alt="" class="img-fluid">
+                            <div class="pl_card_type_pill">
+                                <p class="pl_card_type_pill_text">Video</p>
+                            </div>
+                            <div class="pl_card_hover_div">
+                                <button class="btn btn_view_product">View Product</button>
+                                <button class="btn btn_add_product" data-bs-toggle="modal" data-bs-target="#exampleModal">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="pl_card_bottom">
+                            <p class="pl_card_product_title">Product Name here</p>
+                            <p class="pl_card_product_price">$10.00</p>
+                            <a href="" class="pl_card_linker">View Details</a>
+                        </div>
+                    </div>
+                    <div class="pl_card">
+                        <div class="pl_card_top">
+                            <img src="./img/pl_card_img.png" alt="" class="img-fluid">
+                            <div class="pl_card_type_pill">
+                                <p class="pl_card_type_pill_text">Video</p>
+                            </div>
+                            <div class="pl_card_hover_div">
+                                <button class="btn btn_view_product">View Product</button>
+                                <button class="btn btn_add_product" data-bs-toggle="modal" data-bs-target="#exampleModal">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="pl_card_bottom">
+                            <p class="pl_card_product_title">Product Name here</p>
+                            <p class="pl_card_product_price">$10.00</p>
+                            <a href="" class="pl_card_linker">View Details</a>
+                        </div>
+                    </div>
+                    <div class="pl_card">
+                        <div class="pl_card_top">
+                            <img src="./img/pl_card_img.png" alt="" class="img-fluid">
+                            <div class="pl_card_type_pill">
+                                <p class="pl_card_type_pill_text">Video</p>
+                            </div>
+                            <div class="pl_card_hover_div">
+                                <button class="btn btn_view_product">View Product</button>
+                                <button class="btn btn_add_product" data-bs-toggle="modal" data-bs-target="#exampleModal">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="pl_card_bottom">
+                            <p class="pl_card_product_title">Product Name here</p>
+                            <p class="pl_card_product_price">$10.00</p>
+                            <a href="" class="pl_card_linker">View Details</a>
+                        </div>
+                    </div>
+                    <div class="pl_card">
+                        <div class="pl_card_top">
+                            <img src="./img/pl_card_img.png" alt="" class="img-fluid">
+                            <div class="pl_card_type_pill">
+                                <p class="pl_card_type_pill_text">Video</p>
+                            </div>
+                            <div class="pl_card_hover_div">
+                                <button class="btn btn_view_product">View Product</button>
+                                <button class="btn btn_add_product" data-bs-toggle="modal" data-bs-target="#exampleModal">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="pl_card_bottom">
+                            <p class="pl_card_product_title">Product Name here</p>
+                            <p class="pl_card_product_price">$10.00</p>
+                            <a href="" class="pl_card_linker">View Details</a>
+                        </div>
+                    </div>
+                    <div class="pl_card">
+                        <div class="pl_card_top">
+                            <img src="./img/pl_card_img.png" alt="" class="img-fluid">
+                            <div class="pl_card_type_pill">
+                                <p class="pl_card_type_pill_text">Video</p>
+                            </div>
+                            <div class="pl_card_hover_div">
+                                <button class="btn btn_view_product">View Product</button>
+                                <button class="btn btn_add_product" data-bs-toggle="modal" data-bs-target="#exampleModal">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="pl_card_bottom">
+                            <p class="pl_card_product_title">Product Name here</p>
+                            <p class="pl_card_product_price">$10.00</p>
+                            <a href="" class="pl_card_linker">View Details</a>
+                        </div>
+                    </div>
+                    <div class="pl_card">
+                        <div class="pl_card_top">
+                            <img src="./img/pl_card_img.png" alt="" class="img-fluid">
+                            <div class="pl_card_type_pill">
+                                <p class="pl_card_type_pill_text">Video</p>
+                            </div>
+                            <div class="pl_card_hover_div">
+                                <button class="btn btn_view_product">View Product</button>
+                                <button class="btn btn_add_product" data-bs-toggle="modal" data-bs-target="#exampleModal">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="pl_card_bottom">
+                            <p class="pl_card_product_title">Product Name here</p>
+                            <p class="pl_card_product_price">$10.00</p>
+                            <a href="" class="pl_card_linker">View Details</a>
+                        </div>
+                    </div>
+                    <div class="pl_card">
+                        <div class="pl_card_top">
+                            <img src="./img/pl_card_img.png" alt="" class="img-fluid">
+                            <div class="pl_card_type_pill">
+                                <p class="pl_card_type_pill_text">Video</p>
+                            </div>
+                            <div class="pl_card_hover_div">
+                                <button class="btn btn_view_product">View Product</button>
+                                <button class="btn btn_add_product" data-bs-toggle="modal" data-bs-target="#exampleModal">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="pl_card_bottom">
+                            <p class="pl_card_product_title">Product Name here</p>
+                            <p class="pl_card_product_price">$10.00</p>
+                            <a href="" class="pl_card_linker">View Details</a>
+                        </div>
+                    </div>
+                    <div class="pl_card">
+                        <div class="pl_card_top">
+                            <img src="./img/pl_card_img.png" alt="" class="img-fluid">
+                            <div class="pl_card_type_pill">
+                                <p class="pl_card_type_pill_text">Video</p>
+                            </div>
+                            <div class="pl_card_hover_div">
+                                <button class="btn btn_view_product">View Product</button>
+                                <button class="btn btn_add_product" data-bs-toggle="modal" data-bs-target="#exampleModal">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="pl_card_bottom">
+                            <p class="pl_card_product_title">Product Name here</p>
+                            <p class="pl_card_product_price">$10.00</p>
+                            <a href="" class="pl_card_linker">View Details</a>
+                        </div>
+                    </div>
+                    <div class="pl_card">
+                        <div class="pl_card_top">
+                            <img src="./img/pl_card_img.png" alt="" class="img-fluid">
+                            <div class="pl_card_type_pill">
+                                <p class="pl_card_type_pill_text">Video</p>
+                            </div>
+                            <div class="pl_card_hover_div">
+                                <button class="btn btn_view_product">View Product</button>
+                                <button class="btn btn_add_product" data-bs-toggle="modal" data-bs-target="#exampleModal">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="pl_card_bottom">
+                            <p class="pl_card_product_title">Product Name here</p>
+                            <p class="pl_card_product_price">$10.00</p>
+                            <a href="" class="pl_card_linker">View Details</a>
+                        </div>
+                    </div>
+                    <div class="pl_card">
+                        <div class="pl_card_top">
+                            <img src="./img/pl_card_img.png" alt="" class="img-fluid">
+                            <div class="pl_card_type_pill">
+                                <p class="pl_card_type_pill_text">Video</p>
+                            </div>
+                            <div class="pl_card_hover_div">
+                                <button class="btn btn_view_product">View Product</button>
+                                <button class="btn btn_add_product" data-bs-toggle="modal" data-bs-target="#exampleModal">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="pl_card_bottom">
+                            <p class="pl_card_product_title">Product Name here</p>
+                            <p class="pl_card_product_price">$10.00</p>
+                            <a href="" class="pl_card_linker">View Details</a>
+                        </div>
+                    </div>
+                    <div class="pl_card">
+                        <div class="pl_card_top">
+                            <img src="./img/pl_card_img.png" alt="" class="img-fluid">
+                            <div class="pl_card_type_pill">
+                                <p class="pl_card_type_pill_text">Video</p>
+                            </div>
+                            <div class="pl_card_hover_div">
+                                <button class="btn btn_view_product">View Product</button>
+                                <button class="btn btn_add_product" data-bs-toggle="modal" data-bs-target="#exampleModal">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="pl_card_bottom">
+                            <p class="pl_card_product_title">Product Name here</p>
+                            <p class="pl_card_product_price">$10.00</p>
+                            <a href="" class="pl_card_linker">View Details</a>
+                        </div>
+                    </div>
+                    <div class="pl_card">
+                        <div class="pl_card_top">
+                            <img src="./img/pl_card_img.png" alt="" class="img-fluid">
+                            <div class="pl_card_type_pill">
+                                <p class="pl_card_type_pill_text">Video</p>
+                            </div>
+                            <div class="pl_card_hover_div">
+                                <button class="btn btn_view_product">View Product</button>
+                                <button class="btn btn_add_product" data-bs-toggle="modal" data-bs-target="#exampleModal">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="pl_card_bottom">
+                            <p class="pl_card_product_title">Product Name here</p>
+                            <p class="pl_card_product_price">$10.00</p>
+                            <a href="" class="pl_card_linker">View Details</a>
+                        </div>
+                    </div>
+                    <div class="pl_card">
+                        <div class="pl_card_top">
+                            <img src="./img/pl_card_img.png" alt="" class="img-fluid">
+                            <div class="pl_card_type_pill">
+                                <p class="pl_card_type_pill_text">Video</p>
+                            </div>
+                            <div class="pl_card_hover_div">
+                                <button class="btn btn_view_product">View Product</button>
+                                <button class="btn btn_add_product" data-bs-toggle="modal" data-bs-target="#exampleModal">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="pl_card_bottom">
+                            <p class="pl_card_product_title">Product Name here</p>
+                            <p class="pl_card_product_price">$10.00</p>
+                            <a href="" class="pl_card_linker">View Details</a>
+                        </div>
+                    </div>
+                    <div class="pl_card">
+                        <div class="pl_card_top">
+                            <img src="./img/pl_card_img.png" alt="" class="img-fluid">
+                            <div class="pl_card_type_pill">
+                                <p class="pl_card_type_pill_text">Video</p>
+                            </div>
+                            <div class="pl_card_hover_div">
+                                <button class="btn btn_view_product">View Product</button>
+                                <button class="btn btn_add_product" data-bs-toggle="modal" data-bs-target="#exampleModal">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="pl_card_bottom">
+                            <p class="pl_card_product_title">Product Name here</p>
+                            <p class="pl_card_product_price">$10.00</p>
+                            <a href="" class="pl_card_linker">View Details</a>
+                        </div>
+                    </div>
+                    <div class="pl_card">
+                        <div class="pl_card_top">
+                            <img src="./img/pl_card_img.png" alt="" class="img-fluid">
+                            <div class="pl_card_type_pill">
+                                <p class="pl_card_type_pill_text">Video</p>
+                            </div>
+                            <div class="pl_card_hover_div">
+                                <button class="btn btn_view_product">View Product</button>
+                                <button class="btn btn_add_product" data-bs-toggle="modal" data-bs-target="#exampleModal">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="pl_card_bottom">
+                            <p class="pl_card_product_title">Product Name here</p>
+                            <p class="pl_card_product_price">$10.00</p>
+                            <a href="" class="pl_card_linker">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pls2_bottom_list d-none" id="product_list_view">
+                    <div class="pl_s2_list_element">
+                        <div class="pl_s2_left_div">
+                            <img src="./img/pl_card_img.png" alt="" class="img-fluid">
+                            <div class="pl_card_type_pill">
+                                <p class="pl_card_type_pill_text">Video</p>
+                            </div>
+                        </div>
+                        <div class="pl_s2_right_div">
+                            <p class="pl_s2_element_title">Product Name here</p>
+                            <p class="pl_s2_element_price">$998.00</p>
+                            <p class="pl_s2_element_subtitle">
+                                Lorem ipsum dolor sit amet consectetur. Quis id nunc et congue fusce nisi. Pharetra massa viverra amet vulputate nunc nam magna vehicula dapibus. Tortor et arcu nulla volutpat ac vulputate integer duis. Enim eu nec.
+                            </p>
+                            <a href="" class="pl_s2_view_product">View Details</a>
+                        </div>
+                    </div>
+                    <div class="pl_s2_list_element">
+                        <div class="pl_s2_left_div">
+                            <img src="./img/pl_card_img.png" alt="" class="img-fluid">
+                            <div class="pl_card_type_pill">
+                                <p class="pl_card_type_pill_text">Video</p>
+                            </div>
+                        </div>
+                        <div class="pl_s2_right_div">
+                            <p class="pl_s2_element_title">Product Name here</p>
+                            <p class="pl_s2_element_price">$998.00</p>
+                            <p class="pl_s2_element_subtitle">
+                                Lorem ipsum dolor sit amet consectetur. Quis id nunc et congue fusce nisi. Pharetra massa viverra amet vulputate nunc nam magna vehicula dapibus. Tortor et arcu nulla volutpat ac vulputate integer duis. Enim eu nec.
+                            </p>
+                            <a href="" class="pl_s2_view_product">View Details</a>
+                        </div>
+                    </div>
+                    <div class="pl_s2_list_element">
+                        <div class="pl_s2_left_div">
+                            <img src="./img/pl_card_img.png" alt="" class="img-fluid">
+                            <div class="pl_card_type_pill">
+                                <p class="pl_card_type_pill_text">Video</p>
+                            </div>
+                        </div>
+                        <div class="pl_s2_right_div">
+                            <p class="pl_s2_element_title">Product Name here</p>
+                            <p class="pl_s2_element_price">$998.00</p>
+                            <p class="pl_s2_element_subtitle">
+                                Lorem ipsum dolor sit amet consectetur. Quis id nunc et congue fusce nisi. Pharetra massa viverra amet vulputate nunc nam magna vehicula dapibus. Tortor et arcu nulla volutpat ac vulputate integer duis. Enim eu nec.
+                            </p>
+                            <a href="" class="pl_s2_view_product">View Details</a>
+                        </div>
+                    </div>
+                    <div class="pl_s2_list_element">
+                        <div class="pl_s2_left_div">
+                            <img src="./img/pl_card_img.png" alt="" class="img-fluid">
+                            <div class="pl_card_type_pill">
+                                <p class="pl_card_type_pill_text">Video</p>
+                            </div>
+                        </div>
+                        <div class="pl_s2_right_div">
+                            <p class="pl_s2_element_title">Product Name here</p>
+                            <p class="pl_s2_element_price">$998.00</p>
+                            <p class="pl_s2_element_subtitle">
+                                Lorem ipsum dolor sit amet consectetur. Quis id nunc et congue fusce nisi. Pharetra massa viverra amet vulputate nunc nam magna vehicula dapibus. Tortor et arcu nulla volutpat ac vulputate integer duis. Enim eu nec.
+                            </p>
+                            <a href="" class="pl_s2_view_product">View Details</a>
+                        </div>
+                    </div>
+                    <div class="pl_s2_list_element">
+                        <div class="pl_s2_left_div">
+                            <img src="./img/pl_card_img.png" alt="" class="img-fluid">
+                            <div class="pl_card_type_pill">
+                                <p class="pl_card_type_pill_text">Video</p>
+                            </div>
+                        </div>
+                        <div class="pl_s2_right_div">
+                            <p class="pl_s2_element_title">Product Name here</p>
+                            <p class="pl_s2_element_price">$998.00</p>
+                            <p class="pl_s2_element_subtitle">
+                                Lorem ipsum dolor sit amet consectetur. Quis id nunc et congue fusce nisi. Pharetra massa viverra amet vulputate nunc nam magna vehicula dapibus. Tortor et arcu nulla volutpat ac vulputate integer duis. Enim eu nec.
+                            </p>
+                            <a href="" class="pl_s2_view_product">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_pagination">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination m-0">
+                          <li class="page-item"><a class="page-link" href="#"><img src="./img/pagi_left.png" alt="" class="img-fluid"></a></li>
+                          <li class="page-item"><a class="page-link" href="#"><p>1</p></a></li>
+                          <li class="page-item"><a class="page-link" href="#"><p>2</p></a></li>
+                          <li class="page-item"><a class="page-link" href="#"><p>3</p></a></li>
+                          <li class="page-item"><a class="page-link" href="#"><p>4</p></a></li>
+                          <li class="page-item"><a class="page-link" href="#"><p>5</p></a></li>
+                          <li class="page-item"><a class="page-link" href="#"><img src="./img/pagi_right.png" alt="" class="img-fluid"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+            </div>
+
+
+        </div>
+
+
+        <div class="offcanvas offcanvas-start filter_canvas" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="filter_head">
+                <p class="filter_title">
+                    Filter
+                </p>
+                <button class="btn p-0" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <img src="./img/hamburger_close.svg" alt="" class="img-fluid">
+                </button>
+            </div>
+            <div class="filter_body">
+                <p class="filter_name">Category</p>
+                <div class="filter_tic_frame">
+                    <div class="c-checkbox">
+                        <div class="c-div">
+                            <label class="d-flex justify-content-center justify-content-lg-start">
+                                <input type="checkbox" id="terms" name="terms">
+                                <label for="terms"></label>
+                            </label>
+                        </div>
+                        <div class="c-text">
+                            <span class="login_strong">Relationship (2)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter_tic_frame">
+                    <div class="c-checkbox">
+                        <div class="c-div">
+                            <label class="d-flex justify-content-center justify-content-lg-start">
+                                <input type="checkbox" id="terms" name="terms">
+                                <label for="terms"></label>
+                            </label>
+                        </div>
+                        <div class="c-text">
+                            <span class="login_strong">Relationship (2)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter_tic_frame">
+                    <div class="c-checkbox">
+                        <div class="c-div">
+                            <label class="d-flex justify-content-center justify-content-lg-start">
+                                <input type="checkbox" id="terms" name="terms">
+                                <label for="terms"></label>
+                            </label>
+                        </div>
+                        <div class="c-text">
+                            <span class="login_strong">Relationship (2)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter_tic_frame">
+                    <div class="c-checkbox">
+                        <div class="c-div">
+                            <label class="d-flex justify-content-center justify-content-lg-start">
+                                <input type="checkbox" id="terms" name="terms">
+                                <label for="terms"></label>
+                            </label>
+                        </div>
+                        <div class="c-text">
+                            <span class="login_strong">Relationship (2)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter_tic_frame">
+                    <div class="c-checkbox">
+                        <div class="c-div">
+                            <label class="d-flex justify-content-center justify-content-lg-start">
+                                <input type="checkbox" id="terms" name="terms">
+                                <label for="terms"></label>
+                            </label>
+                        </div>
+                        <div class="c-text">
+                            <span class="login_strong">Relationship (2)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter_divider"></div>
+                <p class="filter_name py-2 mb-2">Price range</p>
+
+                <div class="filter_range">
+                    <div class="middle">
+                        <div class="multi-range-slider">
+                            <input type="range" id="input-left" min="0" max="100" value="25">
+                            <input type="range" id="input-right" min="0" max="100" value="75">
+                    
+                            <div class="slider">
+                                <div class="track"></div>
+                                <div class="range"></div>
+                                <div class="thumb left"></div>
+                                <div class="thumb right"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="range_value_shower">
+                    <div class="">
+                        <p class="min_max">Min</p>
+                        <input type="text" class="form-control min_max_input" min="0" max="100" value="25">
+                    </div>
+                    <div class="">
+                        <p class="min_max">Max</p>
+                        <input type="text" class="form-control min_max_input" min="0" max="100" value="75">
+                    </div>
+                </div>
+
+                <button class="btn btn_normal">
+                    apply
+                </button>
+            </div>
+        </div>
+
+
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal_main">
+              <div class="modal-content modal_content">
+                <div class="modal-body modal_body">
+                  <div class="modal_frame">
+                    <h4 class="product_pop_title">Item added to cart</h4>
+                    <p class="product_pop_subtitle">
+                        Lorem ipsum dolor sit amet consectetur. Habitant placerat nec aenean tempus in est eget elementum.
+                    </p>
+                    <button class="btn btn_global">
+                        <p>Submit</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_main">
+                <div class="footer_left">
+                    <img src="./img/footer_logo.svg" alt="" class="img-flud">
+                </div>
+                <div class="footer_right">
+                    <div class="footer_elements">
+                        <h4 class="footer_title">Quick links</h4>
+                        <a href="" class="footer_links">Store</a>
+                        <a href="" class="footer_links">Our Story</a>
+                        <a href="" class="footer_links">Contact Us</a>
+                        <a href="" class="footer_links">Terms & Conditions</a>
+                        <a href="" class="footer_links">Privacy Policy</a>
+                    </div>
+                    <div class="footer_elements">
+                        <h4 class="footer_title">Contact</h4>
+                        <p class="footer_info">
+                            Lorem Ipsum dolor
+                            100 Edenbridge Road,
+                            Birmingham,
+                            United Kingdom,
+                            B28 8PR
+                        </p>
+                    </div>
+                    <div class="footer_elements">
+                        <h4 class="footer_title">Support</h4>
+                        <p class="footer_info">Support@kindredspirits.co</p>
+                        <p class="footer_info">+44 (0) 20 123 4567</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_divider"></div>
+            <div class="footer_bottom">
+                <img src="./img/Mastercard.png" alt="" class="img-fluid">
+                <p class="footer_copyrights">
+                    ©2023 <span>Kindred Spirits</span> All rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./dist/js/jquery.min.js"></script>
+    <script src="./dist/js/owl.carousel.js"></script>
+    <!-- <script src="./dist/js/bootstrap.min.js"></script>
+    <script src="./dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".hamburger_menu").click(function () {
+                $(".header_mobo_main_slide").fadeIn("slow");
+                $(".hamburger_menu").fadeOut("slow");
+                $(".hamburger_menu_close").fadeIn("slow");
+            });
+            $(".hamburger_menu_close").click(function () {
+                $(".header_mobo_main_slide").fadeOut("slow");
+                $(".hamburger_menu").fadeIn("slow");
+                $(".hamburger_menu_close").fadeOut("slow");
+            });
+            $(".hamburger_cart").click(function () {
+                $(".header_mobo_cart_slide").fadeIn("slow");
+                $(".hamburger_menu").fadeOut("slow");
+                $(".cart_menu_close").fadeIn("slow");
+            });
+            $(".cart_menu_close").click(function () {
+                $(".header_mobo_cart_slide").fadeOut("slow");
+                $(".hamburger_menu").fadeIn("slow");
+                $(".cart_menu_close").fadeOut("slow");
+            });
+        });
+
+        function currency_drop() {
+            var a = document.getElementById('currency_drop');
+            if (a.classList.contains('d-none')) {
+                a.classList.remove('d-none');
+            } else {
+                a.classList.add('d-none')
+            }
+        }
+
+        function showCart() {
+            var a = document.getElementById('cart_drop');
+            if (a.classList.contains('d-none')) {
+                a.classList.remove('d-none');
+            } else {
+                a.classList.add('d-none');
+            }
+        }
+    </script>
+
+    <script>
+        var inputLeft = document.getElementById("input-left");
+        var inputRight = document.getElementById("input-right");
+
+        var thumbLeft = document.querySelector(".slider > .thumb.left");
+        var thumbRight = document.querySelector(".slider > .thumb.right");
+        var range = document.querySelector(".slider > .range");
+
+        function setLeftValue() {
+            var _this = inputLeft,
+                min = parseInt(_this.min),
+                max = parseInt(_this.max);
+
+            _this.value = Math.min(parseInt(_this.value), parseInt(inputRight.value) - 1);
+
+            var percent = ((_this.value - min) / (max - min)) * 100;
+
+            thumbLeft.style.left = percent + "%";
+            range.style.left = percent + "%";
+        }
+        setLeftValue();
+
+        function setRightValue() {
+            var _this = inputRight,
+                min = parseInt(_this.min),
+                max = parseInt(_this.max);
+
+            _this.value = Math.max(parseInt(_this.value), parseInt(inputLeft.value) + 1);
+
+            var percent = ((_this.value - min) / (max - min)) * 100;
+
+            thumbRight.style.right = (100 - percent) + "%";
+            range.style.right = (100 - percent) + "%";
+        }
+        setRightValue();
+
+        inputLeft.addEventListener("input", setLeftValue);
+        inputRight.addEventListener("input", setRightValue);
+
+        inputLeft.addEventListener("mouseover", function() {
+            thumbLeft.classList.add("hover");
+        });
+        inputLeft.addEventListener("mouseout", function() {
+            thumbLeft.classList.remove("hover");
+        });
+        inputLeft.addEventListener("mousedown", function() {
+            thumbLeft.classList.add("active");
+        });
+        inputLeft.addEventListener("mouseup", function() {
+            thumbLeft.classList.remove("active");
+        });
+
+        inputRight.addEventListener("mouseover", function() {
+            thumbRight.classList.add("hover");
+        });
+        inputRight.addEventListener("mouseout", function() {
+            thumbRight.classList.remove("hover");
+        });
+        inputRight.addEventListener("mousedown", function() {
+            thumbRight.classList.add("active");
+        });
+        inputRight.addEventListener("mouseup", function() {
+            thumbRight.classList.remove("active");
+        });
+    </script>
+
+    <script>
+        function grid_btn() {
+            var grid_view = document.getElementById("product_grid_view");
+            var list_view = document.getElementById("product_list_view");
+            var grid_button = document.getElementById("grid_btn");
+            var list_button = document.getElementById("list_btn");
+
+            if (grid_view.classList.contains("d-none")) {
+                grid_view.classList.remove("d-none");
+                list_view.classList.add("d-none");
+                grid_button.classList.add("active")
+                list_button.classList.remove('active')
+            } else {
+                console.log('hi');
+            }
+
+        }
+        function list_btn() {
+            var grid_view = document.getElementById("product_grid_view");
+            var list_view = document.getElementById("product_list_view");
+            var grid_button = document.getElementById("grid_btn");
+            var list_button = document.getElementById("list_btn");
+
+            if (list_view.classList.contains("d-none")) {
+                list_view.classList.remove("d-none");
+                grid_view.classList.add("d-none");
+                grid_button.classList.remove("active")
+                list_button.classList.add('active')
+            } else {
+                console.log('he');
+            }
+        }
+    </script>
+
+</body>
+
+</html>

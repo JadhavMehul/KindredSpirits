@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kindrid Spirits</title>
+
+    <!-- Style Sheets -->
+
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/m_styles.css">
+    <link rel="stylesheet" href="./css/m_responsive.css">
+    <link rel="stylesheet" href="./css/p_style.css">
+    <link rel="stylesheet" href="./css/p_responsive.css">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="fixed-top">
+        <div class="header_top">
+            <div class="container desktop_header">
+                <div class="header_main_container">
+                    <div class="header_left">
+                        <a href="./index.html">
+                            <img src="./img/header_logo.svg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="header_right">
+                        <a href="" class="header_link">Store</a>
+                        <a href="" class="header_link">Our Story</a>
+                        <a href="" class="header_link">Contact us</a>
+                        <a href="" class="header_link">My Account</a>
+                        <button class="btn btn_currency" onclick="currency_drop()">
+                            GBP $
+                            <img src="./img/currency_arrow.svg" alt="" class="img-fluid">
+                        </button>
+                        <div class="currency_drop d-none" id="currency_drop">
+                            <a href="" class="currency_link active">USD $</a>
+                            <a href="" class="currency_link">EUR $</a>
+                            <a href="" class="currency_link">BTC $</a>
+                            <a href="" class="currency_link">RUB $</a>
+                        </div>
+                        <button class="btn btn_cart">
+                            <img src="./img/cart_logo.svg" alt="" class="img-fluid">
+                        </button>
+                        <div class="cart_drop" id="cart_drop" style="display: none;">
+                            <div class="cart_top">
+                                <h4 class="cart_drop_title">Shopping cart</h4>
+                            </div>
+                            <div class="cart_main">
+                                <div class="cart_main_elements">
+                                    <div class="cart_drop_img">
+                                        <img src="./img/cart_drop_img.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="cart_main_info">
+                                        <div class="cart_main_info_top">
+                                            <div class="">
+                                                <p class="cart_info_title">Product name here</p>
+                                                <p class="cart_product_type">Video</p>
+                                            </div>
+                                            <button class="btn btn_cart_item_delete">
+                                                <img src="./img/bin.svg" alt="" class="img-fluid">
+                                            </button>
+                                        </div>
+                                        <div class="cart_main_info_bottom">
+                                            <div class="collector">
+                                                <button class="btn btn_add_sub">
+                                                    <img src="./img/increment.svg" alt="" class="img-fluid">
+                                                </button>
+                                                <input type="text" class="form-control cart_collector">
+                                                <button class="btn btn_add_sub">
+                                                    <img src="./img/decrement.svg" alt="" class="img-fluid">
+                                                </button>
+                                            </div>
+                                            <p class="cart_item_total">$10.99</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mobile_header">
+                <div class="header_mobo_main">
+                    <div class="header_mobo_left">
+                        <div class="hamburger_cart">
+                            <img src="./img/cart_logo.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="header_mobo_center">
+                        <img src="./img/header_mobo.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="header_mobo_right">
+                        <div class="hamburger_menu">
+                            <img src="./img/hamburger_logo.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="hamburger_menu_close" style="display: none;">
+                            <img src="./img/hamburger_close.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_mobo_main_slide" style="display: none;">
+            <div class="header_main_mobo">
+                <a href="" class="header_link">Store</a>
+                <a href="" class="header_link">Our Story</a>
+                <a href="" class="header_link">Contact us</a>
+                <a href="" class="header_link">My Account</a>
+                <button class="btn btn_currency">
+                    GBP $
+                    <img src="./img/currency_arrow.svg" alt="" class="img-fluid">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="error_section">
+        <div class="container">
+            <div class="error_pg_frame">
+                <h1 class="error_title">404</h1>
+                <p class="error_subtitle">The page you have requested could not be found. Don’t worry and return to the previous page.</p>
+                <button class="btn btn_error">
+                    <p>Return home</p>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_main">
+                <div class="footer_left">
+                    <img src="./img/footer_logo.svg" alt="" class="img-flud">
+                </div>
+                <div class="footer_right">
+                    <div class="footer_elements">
+                        <h4 class="footer_title">Quick links</h4>
+                        <a href="" class="footer_links">Store</a>
+                        <a href="" class="footer_links">Our Story</a>
+                        <a href="" class="footer_links">Contact Us</a>
+                        <a href="" class="footer_links">Terms & Conditions</a>
+                        <a href="" class="footer_links">Privacy Policy</a>
+                    </div>
+                    <div class="footer_elements">
+                        <h4 class="footer_title">Contact</h4>
+                        <p class="footer_info">
+                            Lorem Ipsum dolor
+                            100 Edenbridge Road,
+                            Birmingham,
+                            United Kingdom,
+                            B28 8PR	
+                        </p>
+                    </div>
+                    <div class="footer_elements">
+                        <h4 class="footer_title">Support</h4>
+                        <p class="footer_info">Support@kindredspirits.co</p>
+                        <p class="footer_info">+44 (0) 20 123 4567</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_divider"></div>
+            <div class="footer_bottom">
+                <img src="./img/Mastercard.png" alt="" class="img-fluid">
+                <p class="footer_copyrights">
+                    ©2023 <span>Kindred Spirits</span> All rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./dist/js/jquery.min.js"></script>
+    <script src="./dist/js/owl.carousel.js"></script>
+    <!-- <script src="./dist/js/bootstrap.min.js"></script>
+    <script src="./dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $(".hamburger_menu").click(function(){
+                $(".header_mobo_main_slide").fadeIn("slow");
+                $(".hamburger_menu").fadeOut("slow");
+                $(".hamburger_menu_close").fadeIn("slow");
+            });
+            $(".hamburger_menu_close").click(function(){
+                $(".header_mobo_main_slide").fadeOut("slow");
+                $(".hamburger_menu").fadeIn("slow");
+                $(".hamburger_menu_close").fadeOut("slow");
+            });
+        });
+
+        function currency_drop() {
+            var a = document.getElementById('currency_drop');
+            if (a.classList.contains('d-none')) {
+                a.classList.remove('d-none');
+            } else {
+                a.classList.add('d-none')
+            }
+        }
+    </script>
+
+</body>
+</html>
